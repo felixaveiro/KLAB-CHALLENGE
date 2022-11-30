@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  height: 160vh;
+  width: 100%;
+}
+.main .div1 {
+  background-color: rgb(31, 118, 231);
+}
+.main .div2 {
+  background-color: rgb(235, 242, 252);
+}
+
+body .card {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  right: 5%;
+  bottom: 10%;
+  background-color: white;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+
+body .card .div1,
+body .card .div2 {
+  display: flex;
+  flex-direction: column;
+}
+
+body .card .div1 .div1-sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .card .div1 header {
+  padding: 2rem;
+}
+body .card .div1 .header1 span {
+  color: rgb(54, 127, 223);
+  font-weight: bold;
+  font-size: 20px;
+}
+body .card .div1 .cirlce {
+  height: 300px;
+  width: 300px;
+  margin-left: 2rem;
+  background-color: rgb(31, 118, 231);
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 5rem;
+  position: relative;
+}
+body .card .div1 .cirlce .inner {
+  border: 20px solid rgb(238, 240, 241);
+  border-radius: 10px;
+  background-color: white;
+  margin-top: 1rem;
+  width: 140%;
+  height: 85%;
+  position: absolute;
+  left: -10%;
+  box-shadow: rgba(70, 70, 75, 0.2) 0px 7px 29px 0px;
+  display: grid;
+  grid-template-areas: "h h h";
+}
+
+body .card .div1 .cirlce .inner .item1 {
+  grid-area: h;
+}
+body .card .div1 .cirlce .inner .item2 {
+  border: 1px solid red;
+}
+body .card .div1 .cirlce .inner .item3 {
+  border: 1px solid red;
+}
+body .card .div2 form {
+  background-color: rgb(235, 242, 252);
+  margin: 2rem 4rem;
+  border-radius: 5px;
+  padding: 2rem;
+}
+body .card .div2 form div {
+  display: flex;
+  flex-direction: column;
+}
+
+body .card .div2 form label {
+  padding: 10px 0;
+  font-size: 15px;
+}
+body .card .div2 form input {
+  padding: 10px 0;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  box-shadow: rgba(124, 124, 136, 0.2) 0px 7px 29px 0px;
+}
+body .card .div2 form h3,
+.card .div2 form p {
+  text-align: center;
+}
+body .card .div2 form span {
+  font-size: 10px;
+  padding: 5px 0;
+}
+
+body .card .div2 form button {
+  padding: 8px 16px;
+  background-color: rgb(50, 128, 230);
+  color: white;
+  outline: none;
+  border: none;
+}
+
+body .card .div2 .terms {
+  display: flex;
+  flex-direction: row;
+}
+
+body .card .div2 .terms span {
+  padding: 10px 5px;
+  font-size: 12px;
+}
+
+body .card .div2 .terms input {
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+body .card .div2 .logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .card .div2 .logos img {
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+  margin-left: 1rem;
+}
+
+body .card .div2 .or {
+  text-align: center;
+  padding: 2rem;
+}
